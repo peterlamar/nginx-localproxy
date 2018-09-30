@@ -1,8 +1,14 @@
 # nginx-localproxy
 
-Local reverse proxy demonstration of nginx.
+Local reverse proxy demonstrations of nginx.
 
-## Docker Build
+## Example1, simple local docker redirect
+
+Change into example1 dir
+
+```
+cd example1
+```
 
 Stand up containers
 
@@ -11,6 +17,29 @@ docker-compose up
 ```
 
 Visit [localhost](http://localhost) and observe container with proxy in effect
+
+## Example2
+
+Build example dockerfile
+
+```
+docker build . -t handler
+```
+
+Stand up containers
+
+```
+docker-compose up
+```
+
+Test 1
+
+Internet browser to [localhost](http://localhost) and observe base traffic is handled.
+
+Test 2
+
+Internet browser to [localhost/path/](http://localhost/path/)
+
 
 ## Manual
 
