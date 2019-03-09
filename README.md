@@ -1,6 +1,6 @@
 # nginx-localproxy
 
-Local reverse proxy demonstrations of nginx.
+Local reverse proxy demonstrations of nginx. This is a useful pattern to avoid cross-site scripting errors between front-end api calls to a backend server. It can also be used to simulate production deployments of legacy applications. 
 
 ## Example1, simple local docker redirect
 
